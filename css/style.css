@@ -294,9 +294,13 @@ body
 
 .sahyadri-logo{
     margin-top: 50px;
-    margin-right:79px;
+   
     height: 180px;
-}
+  
+    width: 260px; /* Adjust the width to your desired size */
+    }
+    
+
 
 .about-challengers-text{
     font-size: 1.1rem;
