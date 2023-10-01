@@ -29,7 +29,7 @@ setTimeout(() => {
 
 //Email Capture
 
-const scriptURL = 'https://docs.google.com/spreadsheets/d/1kZe1TVJgtJBkCTe5hK1ReYTTLJFTZXeIGExnw8-smd4/edit?usp=sharing'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxHbJHvo4VXszJMmjv1Ur1dSHu2xtX5DSt8kFOhoPLKYgcIQrjcy9IGDSI5OmAXcgBQ/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg");
 
