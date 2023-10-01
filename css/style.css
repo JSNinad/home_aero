@@ -1067,5 +1067,12 @@ footer{
     font-family: Poppins-Semibold;
     font-size: 3rem;
   }
-
+.eventbut{
+    padding: 10px;
+    background-color: #5088dc;
+    background-image: linear-gradient(to bottom left, #00acd1, #2eb584);
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
 
