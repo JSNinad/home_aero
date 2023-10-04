@@ -1056,7 +1056,7 @@ footer{
   @media (max-width: 767px) {
     .card .event-details {
       position: relative;
-      background-color: rgba(23, 95, 84, 0.6);
+      background-color: rgba(26, 105, 93, 0.6);
       transform: none;
       transition: none;
     }
