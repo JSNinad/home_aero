@@ -1,21 +1,4 @@
-// Trailer video
 
-var vid = document.querySelector('iframe');
-const trailer = document.querySelector('.trailer');
-
-
-function toggleVideo(){
-    if(!(trailer.classList.contains('active')))
-    {
-        vid.src="https://www.youtube.com/embed/3s9FAEonO2Y";
-        trailer.classList.add('active');
-    }
-    else
-    {
-        vid.src="";
-        trailer.classList.remove('active');
-    }  
-}
 
 //Down Arrow
 
@@ -65,3 +48,5 @@ card.addEventListener('mouseenter', () => {
 card.addEventListener('mouseleave', () => {
   eventDetails.classList.remove('show');
 });
+
+
