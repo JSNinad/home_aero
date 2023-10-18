@@ -7,7 +7,7 @@ arrow.style.visibility ='hidden';
 
 setTimeout(() => {
     arrow.style.visibility = 'visible';
-}, 10000);
+}, 1000);
 
 
 //Email Capture
