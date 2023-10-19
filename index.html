@@ -299,7 +299,7 @@
             <div class="newsletter">
               <h3>Subscribe now to get all updates </h3>
 
-              <form name="aerophilia">
+              <form method ="post" action="" name="aerophilia" id="contactfrom">
                 <input type="email" name="Email" placeholder="Your email Id" required>
                 <button type="submit">Submit</button>
               </form>
@@ -415,6 +415,18 @@ window.addEventListener('scroll', function() {
 });
 
     </script>
+    <script>
+			const scriptURL = 'https://script.google.com/macros/s/AKfycby0KWrzxTKR1inz6yupLsopZFpL2JlSHICz17b__N20yDw5a7cc9Ss5V6dHoVSCtASI/exec'
+			const form = document.forms['aerophilia']
+		  
+			form.addEventListener('submit', e => {
+			  e.preventDefault()
+			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => alert("Thanks for Contacting TEAM AEROPHILIA..! We Will Contact You Soon..." ))
+				.then(() => {  window.location.reload(); })
+				.catch(error => console.error('Error!', error.message))
+			})
+		  </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

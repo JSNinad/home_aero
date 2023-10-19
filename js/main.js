@@ -12,23 +12,35 @@ setTimeout(() => {
 
 //Email Capture
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwLbunOS5RwEjG5sEk5oOK4JZCvjJtaUj1DacrsAbuZQ2zPlYqKsA6JG-8ZA1wOvlYdbg/exechttps://script.google.com/macros/s/AKfycbyOsMkGK2yqpYpYK5t1GN8-GWH1rA5si_pH39bEB6rhZOydKnRQF0OoBcWQyuSeBErY/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg");
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwLbunOS5RwEjG5sEk5oOK4JZCvjJtaUj1DacrsAbuZQ2zPlYqKsA6JG-8ZA1wOvlYdbg/exechttps://script.google.com/macros/s/AKfycbyOsMkGK2yqpYpYK5t1GN8-GWH1rA5si_pH39bEB6rhZOydKnRQF0OoBcWQyuSeBErY/exec'
+// const form = document.forms['submit-to-google-sheet']
+// const msg = document.getElementById("msg");
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        msg.innerHTML = "Thank You For Subscribing";
-        setTimeout(function() {
-            msg.innerHTML = "";
-        }, 5000);
-        form.reset();
-    })
-    .catch(error => console.error('Error!', error.message))
-})
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//     .then(response => {
+//         msg.innerHTML = "Thank You For Subscribing";
+//         setTimeout(function() {
+//             msg.innerHTML = "";
+//         }, 5000);
+//         form.reset();
+//     })
+//     .catch(error => console.error('Error!', error.message))
+// })
 
+
+// const scriptURL = 'https://script.google.com/macros/s/AKfycby0KWrzxTKR1inz6yupLsopZFpL2JlSHICz17b__N20yDw5a7cc9Ss5V6dHoVSCtASI/exec'
+// const form = document.forms['AeroPhilia']
+		  
+// form.addEventListener('submit', e => {
+// e.preventDefault()
+// fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+// .then(response => alert("Thank you! your form is submitted successfully." ))
+// .then(() => {  window.location.reload(); })
+// .catch(error => console.error('Error!', error.message))
+// 	})
+		  
 //Preloader
 
 var loader = document.getElementById("preloader");
