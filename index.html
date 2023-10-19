@@ -198,7 +198,7 @@
 
       <br>
       <br>
-      
+
 
         <div class="h1_centre">
           <h1  class="title">2022 AFTERMOVIE
@@ -208,9 +208,10 @@
 
         <div class="container mt-5">
           <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/3s9FAEonO2Y?autoplay=1&mute=0" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/3s9FAEonO2Y?autoplay=0&mute=1" frameborder="0" allowfullscreen></iframe>
           </div>
-          </div>
+        </div>
+        
       </div>
 
 
@@ -400,27 +401,33 @@
     <!--Scripts-->
     <script src="js/main.js"></script>
     <script>
-      // Get the video iframe element
 const videoIframe = document.getElementById('video');
+const videoContainer = document.querySelector('.video-container');
 
-// Function to start playing the video
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Video section is in the viewport, play the video
+      playVideo();
+    } else {
+      // Video section is not in the viewport, stop the video
+      stopVideo();
+    }
+  });
+}, {
+  threshold: 0.5 // Adjust the threshold as needed
+});
+
+observer.observe(videoContainer);
+
 function playVideo() {
   videoIframe.src = videoIframe.src.replace('autoplay=0', 'autoplay=1');
 }
 
-// Function to stop playing the video
 function stopVideo() {
   videoIframe.src = videoIframe.src.replace('autoplay=1', 'autoplay=0');
 }
 
-// Add an event listener to start playing the video when the user enters the screen
-window.addEventListener('scroll', function() {
-  if (window.scrollY < 100) {
-    playVideo();
-  } else {
-    stopVideo();
-  }
-});
 
     </script>
     <script>

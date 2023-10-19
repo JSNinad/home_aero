@@ -43,14 +43,14 @@ setTimeout(() => {
 		  
 //Preloader
 
-var loader = document.getElementById("preloader");
+// var loader = document.getElementById("preloader");
 
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-})
+// window.addEventListener("load", function(){
+//     loader.style.display = "none";
+// })
 
-const eventDetails = document.getElementById('eventDetails');
-const card = document.querySelector('.card');
+// const eventDetails = document.getElementById('eventDetails');
+// const card = document.querySelector('.card');
 
 // Toggle the "show" class on the event details
 card.addEventListener('mouseenter', () => {
