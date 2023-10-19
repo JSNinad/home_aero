@@ -53,13 +53,13 @@ setTimeout(() => {
 // const card = document.querySelector('.card');
 
 // Toggle the "show" class on the event details
-card.addEventListener('mouseenter', () => {
-  eventDetails.classList.add('show');
-});
+// card.addEventListener('mouseenter', () => {
+//   eventDetails.classList.add('show');
+// });
 
-card.addEventListener('mouseleave', () => {
-  eventDetails.classList.remove('show');
-});
+// card.addEventListener('mouseleave', () => {
+//   eventDetails.classList.remove('show');
+// });
 
 
 
