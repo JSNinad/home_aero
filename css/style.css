@@ -362,7 +362,7 @@ body
 
 .gradient-text-background{
     display: inline;
-    background-image: linear-gradient(to bottom left, #00acd1, #2eb584); 
+    background-image: linear-gradient(to bottom left, #f69332, #ff6f00); 
     background-clip: content-box; 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
